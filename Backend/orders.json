@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Husna",
+    "phone": "7204664656",
+    "email": "sanasania25@gmail.com",
+    "address": "sewanstr",
+    "items": [],
+    "total": "0"
+  },
+  {
+    "name": " Sanuber",
+    "phone": "7204664656",
+    "email": "sanasania25@gmail.com",
+    "address": "sewan",
+    "items": [],
+    "total": "0"
+  },
+  {
+    "name": "s",
+    "phone": "123",
+    "email": "123@gmail.com",
+    "address": "sfv",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": "€1800",
+        "img": "http://127.0.0.1:5500/frontend/img3.jpeg",
+        "quantity": 1
+      }
+    ],
+    "total": "1800"
+  },
+  {
+    "name": "u",
+    "phone": "123",
+    "email": "123@gmail.com",
+    "address": "as",
+    "items": [],
+    "total": "0"
+  },
+  {
+    "name": "u",
+    "phone": "123",
+    "email": "123@gmail.com",
+    "address": "as",
+    "items": [],
+    "total": "0"
+  },
+  {
+    "name": "Husna Sanuber",
+    "phone": "7204664656",
+    "email": "sanasania25@gmail.com",
+    "address": "ss",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": "€1800",
+        "img": "http://127.0.0.1:5500/frontend/img2.jpeg",
+        "quantity": 4
+      }
+    ],
+    "total": "7200.00"
+  },
+  {
+    "name": "Husna Sanuber",
+    "phone": "45",
+    "email": "sanasania25@gmail.com",
+    "address": "jgj",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "img": "http://127.0.0.1:5500/frontend/img2.jpeg",
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "Husna Sanuber",
+    "phone": "7204664656",
+    "email": "sanasania25@gmail.com",
+    "address": "wertzu",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "Husna Sanuber",
+    "phone": "2345678",
+    "email": "sanasania25@gmail.com",
+    "address": "ertzu",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "Husna Sanuber",
+    "phone": "2345",
+    "email": "sanasania25@gmail.com",
+    "address": "rtzu",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "san",
+    "phone": "7204664656",
+    "email": "sanuber.husna@gmail.com",
+    "address": "sewanstr",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 3
+      }
+    ],
+    "total": "5400.00"
+  },
+  {
+    "name": "Sa",
+    "phone": "7204664656",
+    "email": "sanuber.husna@gmail.com",
+    "address": "sewan",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "sanu",
+    "phone": "7204664656",
+    "email": "sanuber.husna@gmail.com",
+    "address": "sewaa",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "sanii",
+    "phone": "7204664656",
+    "email": "sanuber.husna@gmail.com",
+    "address": "rtzu",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  },
+  {
+    "name": "hu",
+    "phone": "7204664656",
+    "email": "sanuber.husna@gmail.com",
+    "address": "ertzui",
+    "items": [
+      {
+        "title": "Silver Steel Watch",
+        "price": 1800,
+        "quantity": 1
+      }
+    ],
+    "total": "1800.00"
+  }
+]

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Watch Store</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="hamburger" onclick="openMenu()">☰</div>
+        <div class="logo">Premium Watch Store</div>
+
+        <!-- FIXED CART BUTTON -->
+        <div class="cart-icon" onclick="event.stopPropagation(); openCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- FULL SCREEN MENU -->
+    <div id="fullscreenMenu" class="fullscreen-menu">
+        <div class="close-menu" onclick="closeMenu()">✕</div>
+
+        <ul class="menu-links">
+            <li style="--i:1"><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li style="--i:2"><a href="#watches" onclick="closeMenu()">Watches</a></li>
+            <li style="--i:3"><a href="#contact" onclick="closeMenu()">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="landing-hero" id="home">
+        <div class="hero-text">
+            <h1>Premium Watches for Every Occasion</h1>
+
+            <div class="hero-buttons">
+                <a href="#watches" class="btn-primary">Explore Watches</a>
+                <a href="https://wa.me/+4915563609113?text=Hello%2C%20I%20need%20buy%20a%20watch." class="btn-secondary"
+                    target="_blank">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="products" id="watches">
+
+        <!-- PRODUCT CARD TEMPLATE -->
+        <div class="product-card">
+            <img src="img2.jpeg" alt="Silver Steel Watch" />
+            <h3>Silver Steel Watch</h3>
+            <p class="price">1800</p>
+
+            <div class="button-row">
+                <button onclick="openPopup('img2.jpeg', 'Silver Steel Watch', '1800')">Buy</button>
+                <button class="view-btn" onclick="openImage('img2.jpeg')">View</button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="product-card">
+            <img src="img3.jpeg" alt="Silver Steel Watch" />
+            <h3>Silver Steel Watch</h3>
+            <p class="price">1800</p>
+
+            <div class="button-row">
+                <button onclick="openPopup('img3.jpeg', 'Silver Steel Watch', '1800')">Buy</button>
+                <button class="view-btn" onclick="openImage('img3.jpeg')">View</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img4.jpeg" alt="Silver Steel Watch" />
+            <h3>Silver Steel Watch</h3>
+            <p class="price">1800</p>
+
+            <div class="button-row">
+                <button onclick="openPopup('img4.jpeg', 'Silver Steel Watch', '1800')">Buy</button>
+                <button class="view-btn" onclick="openImage('img4.jpeg')">View</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>© 2026 Premium Watch Store • All Rights Reserved</p>
+    </footer>
+
+    <!-- IMAGE VIEW POPUP -->
+    <div id="imagePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img id="big-image" alt="Selected Watch" />
+        </div>
+    </div>
+
+    <!-- FIXED CENTERED CART POPUP -->
+    <div id="cart" class="cart-overlay">
+        <div class="cart-popup">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+
+            <div id="cart-items" class="cart-items"></div>
+
+            <div class="cart-footer">
+                <p>Total: €<span id="cart-total">0</span></p>
+                <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- BUY POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeBuyPopup()">&times;</span>
+
+            <img id="buy-img" alt="Selected Watch" />
+            <h2 id="buy-title"></h2>
+            <p id="buy-price"></p>
+
+            <div class="button-row">
+                <button onclick="addToCartFromPopup()">Add to Cart</button>
+                <button onclick="openCheckout()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT POPUP -->
+    <div id="checkoutPopup">
+        <div class="checkout-box">
+
+            <div class="checkout-header">
+                <h2>Checkout Details</h2>
+                <span class="close-checkout" onclick="closeCheckout()">×</span>
+            </div>
+
+            <form id="checkoutForm">
+
+                <input type="text" id="name" placeholder="Full Name" required>
+
+                <input type="text" id="phone" placeholder="Phone Number" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <textarea id="address" placeholder="Delivery Address" rows="3" required></textarea>
+
+                <button class="place-order-btn" type="submit">Place Order</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- PAYMENT POPUPS -->
+    <div id="paymentPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePaymentPopup()">&times;</span>
+            <h2>Select Payment Method</h2>
+
+            <button onclick="openOnlinePayment()">Online Payment</button>
+            <button onclick="confirmCOD()">Cash on Delivery</button>
+        </div>
+    </div>
+
+    <div id="onlinePaymentPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeOnlinePayment()">&times;</span>
+            <h2>Select Payment App</h2>
+
+            <button onclick="payWithPhonePe()">PhonePe</button>
+            <button onclick="payWithGooglePay()">Google Pay</button>
+
+            <div style="margin-top: 16px;">
+                <button onclick="confirmOnlinePayment()">I have completed the payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
