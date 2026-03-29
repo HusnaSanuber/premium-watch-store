@@ -246,11 +246,12 @@ function confirmCOD() {
 ---------------------------------------------------- */
 async function handlePaymentSuccess() {
     try {
-        const response = await fetch("http://127.0.0.1:5001/checkout", {
+        const response = await fetch("https://premium-watch-store-backend.onrender.com/checkout", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(window.orderData)
         });
+
 
         const result = await response.json();
 
